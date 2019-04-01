@@ -12,15 +12,20 @@ stage.appendChild(input);
 
 stage.appendChild(buton).innerHTML = 'Submit';
 
-document.stage.appendChild(stage);
-
-document.getElementsByTagName("button").onclick = newer = () => {
 
 
+buton.addEventListener("click", newer= () => {
 
 
 
-a.push(document.getElementsByTagName("input").value);
+
+
+a.push(input.value);
 console.log("from input " + a);
 
-}
+});
+
+
+
+
+
