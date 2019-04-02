@@ -5,8 +5,7 @@ let stage = document.getElementById('root'),
     input = document.createElement("input"),
     buton = document.createElement("button");
 
-
-
+fetch('')
 
 stage.appendChild(input);
 
@@ -20,8 +19,7 @@ buton.addEventListener("click", newer= () => {
 
 
 
-a.push(input.value);
-console.log("from input " + a);
+
 
 });
 
