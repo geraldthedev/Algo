@@ -19,15 +19,15 @@ stage.appendChild(buton).innerHTML = 'Submit';
 
 
 buton.addEventListener("click", callIt = ()=>{
-const api = fetch('https://api.openweathermap.org/data/2.5/forecast?id=524901&APPID=56af104aec8db3f6b9434f46ef28c901')
+const api = 'https://api.openweathermap.org/data/2.5/forecast?id=524901&APPID=56af104aec8db3f6b9434f46ef28c901',
+      data = {
+          "list":[]
 
-.then(getIt=(response)=>{
-    return response.json()
+      }
 
-})
-.then(backIt=(myStuff)=>{
-    
-})
+      console.log(data.list[1]);
+
+
 
 
 })
