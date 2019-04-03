@@ -17,26 +17,20 @@ stage.appendChild(buton).innerHTML = 'Submit';
 
 
 
+input.addEventListener("keypress", buton.addEventListener("click", async function callIt(){
+const url = 'https://api.openweathermap.org/data/2.5/forecast?id=524901&APPID=56af104aec8db3f6b9434f46ef28c901'
+const res =await fetch(url);
 
-buton.addEventListener("click", callIt = ()=>{
-const api = 'https://api.openweathermap.org/data/2.5/forecast?id=524901&APPID=56af104aec8db3f6b9434f46ef28c901'
-
-    callback =()=>{
-        fetch(api,
-        {
-            method: 'GET'
-        })
-
-        console.log()
-    }
-
-
-callback();
+const data =await res.json();
 
 
 
+document.body.innerHTML = JSON.stringify(data);
+console.log(data);
 
-})
+callIt();
+}, 1000) );
+
 
 
 
