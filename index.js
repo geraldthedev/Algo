@@ -1,6 +1,4 @@
-let a = [];
-let b = [];
-let i = 0;
+
 let stage = document.getElementById('root'),
     input = document.createElement("input"),
     buton = document.createElement("button");
@@ -30,18 +28,14 @@ const res =await fetch(url, {
 
 const data =await res.json();
 
-do{
-    callIt();
-}while(i=0, i++, i<=4)
-
-document.body.innerHTML = JSON.stringify(data);
-console.log(data);
-
-
-}, 1000) );
 
 
 
 
 
 
+
+
+
+
+}))
