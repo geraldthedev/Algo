@@ -16,17 +16,16 @@ stage.appendChild(buton).innerHTML = 'Submit';
 
 
 input.addEventListener("keypress", buton.addEventListener("click", async function callIt(){
-const url = 'https://numbersapi.p.rapidapi.com/1729/math?fragment=true&json=true'
+const url = 'https://api.nytimes.com/svc/books/v3/lists/best-sellers/history.json?&api-key=xsFcDSN2hxkxB7fcj1775KIXA2D566kh'
 const res =await fetch(url, {
     method: "GET",
-    headers:{
-        "X-RapidAPI-Host": "numbersapi.p.rapidapi.com",
-        "X-RapidAPI-Key": "0ffcb639c8msh9cfa6ba024c1502p1ffe6ejsncf8d69fe5cbf"
-    }
+    
 
 });
 
 const data =await res.json();
+console.log(data)
+
 
 
 
