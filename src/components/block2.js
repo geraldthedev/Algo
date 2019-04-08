@@ -1,5 +1,5 @@
 import React from 'react';
-import { METHODS } from 'http';
+
 
 export default class Block2 extends React.Component{
 

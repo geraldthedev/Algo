@@ -30,7 +30,6 @@ constructor(props){
     position: "relative",
     padding: "auto",
     margin: "10px",
-
     borderStyle: "solid",
     boxSizing: "content-box",
     display: "block",
