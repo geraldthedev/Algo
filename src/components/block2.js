@@ -11,9 +11,11 @@ export default class Block2 extends React.Component{
 
 async componentDidMount(){
     const res = await
-    fetch('https://www.poemist.com/api/v1//randompoems')
+    fetch('https://geek-jokes.sameerkumar.website/api',{
+        method: 'GET',
+    })
     const json = await res.json();
-    this.setState({data: json.results});
+    this.setState({data: json});
 }
     render(){
         const restyle ={
@@ -29,13 +31,7 @@ async componentDidMount(){
 }
       return(
           <div style={restyle}>
-       {this.state.data.map(el=>(
-
-        <div>
-        {el.quote}
-        </div>
-
-        ))}
+       {this.state.data}
           </div>
       );
 
