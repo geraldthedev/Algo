@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 export default class Block1 extends React.Component{
-constructor(){
-    super();
+constructor(props){
+    super(props);
     this.state ={ data:[] };
 
 
@@ -27,11 +27,10 @@ constructor(){
     render(){
         const restyle ={
     align: "block",
-    width: "50px",
     position: "relative",
     padding: "auto",
     margin: "10px",
-    height: "65px",
+
     borderStyle: "solid",
     boxSizing: "content-box",
     display: "block",
