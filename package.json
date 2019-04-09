@@ -19,6 +19,7 @@
   "homepage": "https://github.com/hakeem1106/Algo#readme",
   "dependencies": {
     "@google/maps": "^0.5.5",
+    "google-maps-react": "^2.0.2",
     "nodejs": "0.0.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",

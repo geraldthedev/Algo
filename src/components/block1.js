@@ -15,10 +15,6 @@ constructor(props){
     const json = await res.json();
     this.setState({data: json.results});
 
-
-
-
-
 }
 
 
