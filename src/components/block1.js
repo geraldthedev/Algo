@@ -15,7 +15,19 @@ constructor(props){
     const json = await res.json();
     this.setState({data: json.results});
 
+    let i = this.state.data
+    let g = 0
+
+    while(g<i.length, g++){
+
+        let h = i[Math.floor(Math.random()*i.length)]
+
+    }
+
+
+
 }
+
 
 
 
@@ -33,9 +45,12 @@ constructor(props){
 
 
 }
+
       return(
           <div style={restyle}>
-        {this.state.data.map(el=>(
+        {i.map(el=>(
+
+
 
         <div>
         {el.author}: {el.title}
