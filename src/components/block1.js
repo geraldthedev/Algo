@@ -5,20 +5,12 @@ export default class Block1 extends React.Component{
 constructor(props){
     super(props);
     this.state ={ data:[] };
-    let i = this.state.data
-    let g = 0
 
-
-    do{
-        let h = i[Math.floor(Math.random()*i.length)]
-        console.log(h)
-
-
-    }while(g<i.length, g++)
+}
 
 
 
-    }
+
 
 
     async componentDidMount(){
@@ -27,18 +19,21 @@ constructor(props){
     const json = await res.json();
     this.setState({data: json.results});
 
+
+
     /*let i = this.state.data
     let g = 0
 
-    while(g<i.length, g++){
+    do{
 
         let h = i[Math.floor(Math.random()*i.length)]
+        const y = h
+        console.log(y)
 
-    }
-
-*/
+    }while(g<i.length, g++)*/
 
 }
+
 
 
 
@@ -61,8 +56,16 @@ constructor(props){
 
 }
 
+    let i = this.state.data
+    let g = 0
 
+    do{
 
+        let h = i[Math.floor(Math.random()*i.length)]
+        const y = h
+        console.log(y)
+
+    }while(g<i.length, g++)
 
 
 
@@ -74,7 +77,7 @@ constructor(props){
 
 
           <div style={restyle}>
-        {h.map(el=>(
+        {this.state.data.map(el=>(
 
 
 
